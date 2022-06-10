@@ -1,7 +1,7 @@
 import TableConf from './components/table-conf.vue'
 
 export default {
-  title: '组件库/excel',
+  title: '工具库/excel',
   component: TableConf,
   argTypes: {
     size: {
