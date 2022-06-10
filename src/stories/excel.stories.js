@@ -1,7 +1,7 @@
 import ExportWord from './components/export-word.vue'
 
 export default {
-  title: '组件库/导出/文档带图片',
+  title: '组件库/wps',
   component: ExportWord
 }
 
@@ -13,4 +13,4 @@ const Template = (args) => ({
   template: '<export-word v-bind="args" />'
 })
 
-export const Word = Template.bind({})
+export const 文档 = Template.bind({})
