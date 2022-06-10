@@ -1,0 +1,41 @@
+{
+  "name": "story",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "start-storybook -p 10086",
+    "build": "build-storybook",
+    "test": "test-storybook"
+  },
+  "dependencies": {
+    "@storybook/test-runner": "^0.1.1",
+    "autoprefixer": "^10.4.7",
+    "chromatic": "^6.5.6",
+    "docxtemplater": "^3.30.0",
+    "docxtemplater-image-module-free": "^1.1.1",
+    "element-plus": "^2.2.5",
+    "file-saver": "^2.0.5",
+    "jest": "27",
+    "pizzip": "^3.1.1",
+    "tailwindcss": "^3.1.2",
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@storybook/addon-actions": "^6.5.8",
+    "@storybook/addon-essentials": "^6.5.8",
+    "@storybook/addon-interactions": "^6.5.8",
+    "@storybook/addon-links": "^6.5.8",
+    "@storybook/builder-vite": "^0.1.36",
+    "@storybook/testing-library": "^0.0.11",
+    "@storybook/vue3": "^6.5.8",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "babel-loader": "^8.2.5",
+    "typescript": "^4.5.4",
+    "unplugin-auto-import": "^0.8.7",
+    "unplugin-vue-components": "^0.19.6",
+    "vite": "^2.9.9",
+    "vue-loader": "^16.8.3",
+    "vue-tsc": "^0.34.7"
+  }
+}
