@@ -1,5 +1,6 @@
-import { Canvas, Meta, Story } from '@storybook/addon-docs'
+import { Canvas, Meta, Story, Source } from '@storybook/addon-docs'
 import ExportWord from './components/export-word.vue'
+import dedent from 'ts-dedent'
 
 <Meta title="组件库/wps" component={ExportWord} />
 
@@ -23,16 +24,19 @@ export const Template = (args) => ({
 
 - 导出word带图片
 
-```vue
-<script lang="ts" setup>
-const word = () => {
-  renderDoc({
-    list: [
-      { img: '/demo.png', name: '图片1' },
-      { img: '/demo.png', name: '图片2' }
-    ],
-    url: '/doc-template.docx'
-  })
-}
-</script>
-```
+<Source
+  language='js'
+  dark
+  format={false}
+  code={dedent`
+    const word = () => {
+      renderDoc({
+        list: [
+          { img: '/demo.png', name: '图片1' },
+          { img: '/demo.png', name: '图片2' }
+        ],
+        url: '/doc-template.docx'
+      })
+    }
+  `}
+/>

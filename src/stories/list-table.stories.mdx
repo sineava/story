@@ -1,5 +1,6 @@
-import { Canvas, Meta, Story } from '@storybook/addon-docs'
+import { Canvas, Meta, Story, Source } from '@storybook/addon-docs'
 import TableConf from './components/table-conf.vue'
+import dedent from 'ts-dedent'
 
 <Meta title="工具库/excel" component={TableConf} argTypes={{
   size: {
@@ -32,9 +33,14 @@ export const Template = (args) => ({
 
 - 使用文档
 
-```vue
-<table-conf
-  list="[{ id: 1, name: 'zs' }, { id: 2, name: 'ls' }]"
-  options="[{ k: 'name', v: '姓名' }]"
+<Source
+  language='html'
+  dark
+  format={false}
+  code={dedent`
+    <table-conf
+      list="[{ id: 1, name: 'zs' }, { id: 2, name: 'ls' }]"
+      options="[{ k: 'name', v: '姓名' }]"
+    />
+  `}
 />
-```
