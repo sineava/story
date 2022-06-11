@@ -8,6 +8,7 @@
     "test": "test-storybook"
   },
   "dependencies": {
+    "@storybook/addon-docs": "^6.5.8",
     "@storybook/test-runner": "^0.1.1",
     "autoprefixer": "^10.4.7",
     "chromatic": "^6.5.6",

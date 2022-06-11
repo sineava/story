@@ -1,0 +1,40 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs'
+import TableConf from './components/table-conf.vue'
+
+<Meta title="工具库/excel" component={TableConf} argTypes={{
+  size: {
+    options: ['large', 'default', 'small'],
+    control: { type: 'inline-radio' }
+  }
+}} />
+
+export const Template = (args) => ({
+  components: { TableConf },
+  setup() {
+    return { args };
+  },
+  template: '<table-conf v-bind="args" />'
+})
+
+# 列表组件
+
+<Canvas>
+  <Story 
+    name="文档"
+    args={{
+      list: [{ id: 1, name: 'zs' }, { id: 2, name: 'ls' }],
+      options: [{ k: 'name', v: '姓名' }]
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+- 使用文档
+
+```vue
+<table-conf
+  list="[{ id: 1, name: 'zs' }, { id: 2, name: 'ls' }]"
+  options="[{ k: 'name', v: '姓名' }]"
+/>
+```
