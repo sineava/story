@@ -1,0 +1,32 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs'
+import ExportWord from './components/export-word.vue'
+
+<Meta title="组件库/wps" component={ExportWord} />
+
+export const Template = (args) => ({
+  components: { ExportWord },
+  setup() {
+    return { args }
+  },
+  template: '<export-word v-bind="args" />'
+})
+
+# 文档组件
+
+export const 文档 = Template.bind({})
+
+- 导出word带图片
+
+```vue
+<script lang="ts" setup>
+const word = () => {
+  renderDoc({
+    list: [
+      { img: '/demo.png', name: '图片1' },
+      { img: '/demo.png', name: '图片2' }
+    ],
+    url: '/doc-template.docx'
+  })
+}
+</script>
+```
